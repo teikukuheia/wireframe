@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *, *::before, *::after {
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,6 +28,7 @@ header {
     height: 70px;
     align-items: center;
     padding: 0 70px;
+    font-weight: 600;
 }
 .left-content {
     margin-right: auto;
@@ -54,6 +56,7 @@ header {
 }
 .list-element {
     margin: 0 30px;
+    font-weight: 600;
 }
 .collapse {
     margin-left: 10px;
@@ -81,6 +84,7 @@ header {
     border-radius: 23px;
     display: flex;
     justify-content: center;
+    font-weight: 500;
 }
 .bottom-content {
     flex-direction: column;
@@ -103,6 +107,9 @@ header {
 }
 .search-box p {
     margin-top: 16px;
+}
+input {
+    font-family: 'Montserrat', sans-serif;
 }
 .city-input, .default-input-box {
     outline: none;
@@ -209,6 +216,8 @@ header {
 .banner-inner-content p {
     margin-top: 7px;
     margin-bottom: 55px;
+    color: rgba(154, 154, 154, 1);
+    font-weight: 500;
 }
 .stars {
     margin-right: 10px;
@@ -238,6 +247,9 @@ header {
     display: flex;
     flex-direction: row;
 }
+.card h4 {
+    height: 10px;
+}
 .desc h4 {
     padding: 0 15px;
     margin: 0;
@@ -245,18 +257,217 @@ header {
 .desc p {
     height: 24px;
     line-height: 24px;
-    margin: 0;
     padding: 0 15px;
+}
+.desc .desc-street {
+    margin-top: 0;
+    margin-bottom: 0px;
 }
 .outer-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-bottom: 30px;
 }
 .featured .cards {
     flex-wrap: wrap;
+    justify-content: center;
 }
 .featured .card {
     width: 357px;
+}
+.featured-heading {
+    margin-left: 120px;
+}
+.featured-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.featured-icons img {
+    margin: 0 10px;
+}
+.tips p {
+    margin-top: 0;
+    font-weight: 600;
+    color: rgb(154,154,154);
+}
+.fix-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fix-margin-for-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.platforms {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+.platform-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 52px;
+    width: 172px;
+    background: #e0e2e6;
+    margin-right: 13px;
+    padding: 15px 29px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.price {
+    font-weight: 600;
+    color: #9a9a9a;
+}
+.platform-button:hover {
+    cursor: pointer;
+}
+.platform-button img {
+    margin-right: 18px;
+}
+.phone-banner-icon {
+    margin-left: auto;
+}
+.platform-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.download-our-app {
+    width: 100%;
+}
+.discover-desc {
+    width: 691px;
+    font-weight: 400;
+    color:rgba(154, 154, 154, 1);
+    line-height: 24px;
+    margin-top: 68px;
+}
+.outer-link {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    margin-right: 25px;
+}
+.discover-more {
+    margin-top: 35px;
+}
+.banner-no-background {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flex-left-row {
+    display: flex;
+    flex-direction: column;
+}
+.flex-right-row {
+    width: 382px;
+    height: 437px;
+    background: #e8eaec;
+    border-radius: 10px;
+    margin-left: 130px;
+}
+.flex-mail-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mail-column {
+    margin-right: 70px;
+}
+.mail-us {
+    background: #E8EAEC;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 117px;
+}
+.mail-us-input {
+    height: 52px;
+    width: 794px;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    border-radius: 26px;
+}
+.submit-mail-button {
+    background: #9A9A9A;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    position: relative;
+    left: -52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.submit-mail-button:hover {
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 648px;
+    background: #EFF0F2;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 72px 80px;
+}
+.copyright {
+    background: #EFF0F2;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 42px 80px;
+    border-top: 1px solid #E0E2E6;
+}
+.left-footer-content {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 382px;
+}
+.left-footer-content p {
+    color:rgba(154, 154, 154, 1);
+    margin-bottom: 60px; 
+}
+.right-footer-content {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.footer-list {
+    margin: 0 60px;
+}
+.footer-list h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.social-icons img {
+    margin-right: 25px;
+}
+.social-icons img:hover {
+    cursor: pointer;
+}
+.float-to-the-right {
+    margin-left: auto;
+}
+.copyright-left {
+    font-weight: 600;
 }
