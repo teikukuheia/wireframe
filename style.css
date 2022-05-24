@@ -213,3 +213,50 @@ header {
 .stars {
     margin-right: 10px;
 }
+.end:hover {
+    cursor: pointer;
+}
+.search {
+    background: #484848;
+    border-radius: 50%;
+    padding: 12px;
+}
+.circle {
+    background: #fff;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin: 0 2px;
+}
+.circles {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+.feature-row {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.desc h4 {
+    padding: 0 15px;
+    margin: 0;
+}
+.desc p {
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+    padding: 0 15px;
+}
+.outer-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.featured .cards {
+    flex-wrap: wrap;
+}
+.featured .card {
+    width: 357px;
+}
