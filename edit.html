@@ -60,8 +60,8 @@
                 </div>
                 <div class="save-field">
                     <p class="notice">All the required user information can be added here...</p>
-                    <div class="cancel pointer" id="profile"><img src="icons/cross-2.svg" class="cross" alt="">Cancel</div>
-                    <div class="button save-button pointer" id="profile">Save</div>
+                    <div id="profile2" class="cancel pointer"><img src="icons/cross-2.svg" class="cross" alt="">Cancel</div>
+                    <div class="button save-button pointer" id="profile3">Save</div>
                 </div>
             </div>
         </div>
@@ -108,10 +108,20 @@
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
     <script>
         const userPage = document.getElementById("profile");
+        const userPage2 = document.getElementById("profile2");
+        const userPage3 = document.getElementById("profile3");
 
         userPage.addEventListener("click", goToUserPage);
+        userPage2.addEventListener("click", goToUserPage2);
+        userPage3.addEventListener("click", goToUserPage3);
 
         function goToUserPage() {
+            location.href = "profile.html";
+        }
+        function goToUserPage2() {
+            location.href = "profile.html";
+        }
+        function goToUserPage3() {
             location.href = "profile.html";
         }
     </script>
