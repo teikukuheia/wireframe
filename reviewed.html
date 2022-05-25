@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website Wireframe Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+        <div class="left-content">
+            <a href="index.html">LOGO</a>
+        </div>
+        <div class="center-content">
+            <div class="list-element">Find a Property</div>
+            <div class="list-element">Share Stories</div>
+            <div class="list-element">Rental Guides</div>
+            <div class="list-element">Download Mobile App</div>
+            <div class="button">Become A Host</div>
+        </div>
+        <div class="right-content">
+            <div class="menu-user">
+                <div class="collapse">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            <div class="user-icon pointer"><img src="icons/Vector.svg" id="profile" alt=""></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bottom-content">
+        <div class="center-content">
+            <h1>FIND</h1>
+            <div class="list-element active">Rooms</div>
+            <div class="list-element">Flats</div>
+            <div class="list-element">Hostels</div>
+            <div class="list-element">Villas</div>
+        </div>
+        <div class="center-content">
+            <div class="header-search-box">
+                <div class="search-box">
+                    <p>Location</p>
+                    <input type="text" class="city-input" placeholder="Which city do you prefer?">
+                </div>
+                <div class="search-box default">
+                    <p>Check In</p>
+                    <input type="text" class="default-input-box" placeholder="Add Dates">
+                </div>
+                <div class="search-box default">
+                    <p>Check Out</p>
+                    <input type="text" class="default-input-box" placeholder="Add Dates">
+                </div>
+                <div class="search-box default">
+                    <p>Guests</p>
+                    <input type="text" class="default-input-box" placeholder="Add Guests">
+                </div>
+                <div class="search-box default"><img src="icons/glass.svg" class="search" alt=""></div>
+            </div>
+        </div>
+    </div>
+    </header>
+    <div class="center-content">
+        <div class="align-vertical-center pointer" id="main">
+            hehe
+        </div>
+    </div>
+    <footer>
+        <div class="left-footer-content">
+            <h1>LOGO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="platforms">
+                <div class="platform-button"><img src="icons/ion_logo-google-playstore.svg" alt="">PlayStore</div>
+                <div class="platform-button"><img src="icons/ion_logo-apple-appstore.svg" alt="">AppStore</div>
+            </div>
+        </div>
+        <div class="right-footer-content">
+            <div class="footer-list">
+                <h3>company</h3>
+                <p>About Us</p>
+                <p>Legal Information</p>
+                <p>Contact Us</p>
+                <p>Blogs</p>
+            </div>
+            <div class="footer-list">
+                <h3>help center</h3>
+                <p>Find A Property</p>
+                <p>How To Host?</p>
+                <p>Why Us?</p>
+                <p>FAQs</p>
+                <p>Rental Guides</p>
+            </div>
+            <div class="footer-list">
+                <h3>contact info</h3>
+                <p>Phone: 1234567890</p>
+                <p>Email: company@email.com</p>
+                <p>Location: 100 Smart Street, 100, LA, USA</p>
+                <div class="social-icons">
+                    <img src="icons/fb icon.svg">
+                    <img src="icons/twitter icon.svg">
+                    <img src="icons/insta icon.svg">
+                    <img src="icons/linkedin icoon.svg">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
+    <script>
+        const userPage = document.getElementById("main");
+
+        userPage.addEventListener("click", goToUserPage);
+
+        function goToUserPage() {
+            location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

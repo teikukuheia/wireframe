@@ -11,7 +11,7 @@
     <header>
         <div class="header">
         <div class="left-content">
-            LOGO
+            <a href="index.html">LOGO</a>
         </div>
         <div class="center-content">
             <div class="list-element">Find a Property</div>
@@ -27,7 +27,7 @@
                     <div class="line"></div>
                     <div class="line"></div>
                 </div>
-            <div class="user-icon"><img src="icons/Vector.svg" alt=""></div>
+            <div class="user-icon pointer"><img src="icons/Vector.svg" id="profile" alt=""></div>
             </div>
         </div>
         
@@ -437,5 +437,14 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
+    <script>
+        const userPage = document.getElementById("profile");
+
+        userPage.addEventListener("click", goToUserPage);
+
+        function goToUserPage() {
+            location.href = "profile.html";
+        }
+    </script>
 </body>
 </html>
