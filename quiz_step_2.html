@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website Wireframe Design</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="prop.css">
 </head>
 <body>
     <header>
@@ -42,31 +42,21 @@
             <div class="user-icon pointer" id="profile"><img src="icons/Vector.svg" alt=""></div>
             </div>
         </div>
-        
     </div>
     </header>
-    <div class="center-content">
-        <div class="info-frame">
-            <div class="left-info-profile-content">
-                <div class="profile-picture-frame">
-                    <img class="pointer" src="icons/profile_photo.svg" alt="">
-                    <h2 class="pointer">Upload a Photo</h2>
-                </div>
-                <h1 class="verify">Identity Verification</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <h1 class="name">John Doe</h1>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Email Confirmed</p>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Mobile Confirmed</p>
+    <div class="center-content rent-heading">
+        <h1 class="prop-heading nomarginnohost">Add a short description of your place.</h1>
+        <div class="rent-options long-options">
+            <div class="long-option pointer">
+                <h2>Rental unit</h2>
+                <p>A rented place within a multi-unit residential building or complex.</p>
             </div>
-            <div class="right-info-profile-content">
-                <h1 class="greet">Hello, John Doe</h1>
-                <p class="joined">Joined in 2022</p>
-                <div class="outer-edit-button pointer" id="editProfile">Edit Profile</div>
-                <div class="reviews"><img src="icons/star.svg" class="review-star" alt=""><p>0 Reviews</p></div>
-                <div class="drawline-profile"></div>
-                <a href="reviewed.html" class="reviewed pointer">Reviewed By You</a>
+            <div class="long-option pointer">
+                <h2>Shared unit</h2>
+                <p>A rented place within a multi-unit residential building or complex.</p>
             </div>
         </div>
+        <div class="button next-step-button" id="step_3">Next</div>
     </div>
     <footer>
         <div class="left-footer-content">
@@ -108,15 +98,15 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
+    <script src="script.js"></script>
     <script>
-        const edit = document.getElementById("editProfile");
+        const nextStep = document.getElementById("step_3");
 
-        edit.addEventListener("click", goToEdit);
+        nextStep.addEventListener("click", nextQuizStep);
 
-        function goToEdit() {
-            location.href = "edit.html";
+        function nextQuizStep(){
+            location.href = "quiz_step_3.html";
         }
     </script>
-    <script src="script.js"></script>
 </body>
 </html>

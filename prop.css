@@ -32,9 +32,11 @@ body {
     background: #9a9a9a;
     color: white;
     display: flex;
-    justify-content: flex-end;
     flex-direction: column;
     padding: 24px;
+}
+.prop-card-bot-info {
+    margin-top: auto;
 }
 .prop-card h3 {
     font-size: 16px;
@@ -218,4 +220,128 @@ body {
     margin-left: 50px;
     background: #e8eaec;
     border-radius: 12px;
+}
+.rent-heading {
+    margin: 90px 120px;
+}
+.rent-option-preview {
+    height: 100px;
+    width: 100px;
+    background: #c2c6cc;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    margin-right: 30px;
+}
+.rent-options {
+    display: flex;
+    margin: 60px -30px;
+}
+.rent-option {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin: 0 30px;
+    width: 279px;
+    background: #eff0f2;
+    height: 100px;
+    border-radius: 6px;
+}
+.rent-option h2 {
+    font-size: 16px;
+}
+.next-step-button {
+    background: #9a9a9a;
+    width: 119px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    border-radius: 28px;
+}
+.long-options {
+    display: flex;
+    margin: 60px -30px;
+}
+.long-option {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    width: 588px;
+    background: #eff0f2;
+    height: 100px;
+    padding: 30px;
+    border-radius: 6px;
+}
+.long-option h2 {
+    color: #484848;
+    font-size: 16px;
+    margin: 0;
+}
+.long-option p {
+    margin: 2px 0;
+    font-weight: 500;
+    color: #9a9a9a;
+}
+.radial-option {
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+}
+.radial-option:first-child, .radial-option:last-child {
+    margin: 0;
+}
+.radial-icon {
+    background: #E8EAEC;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+.radial-number {
+    font-weight: 800;
+    font-size: 22px;
+}
+.facility {
+    font-size: 16px;
+    font-weight: 700;
+}
+.wrap-true {
+    flex-wrap: wrap;
+    width: 1400px;
+}
+.wrapped {
+    margin-bottom: 30px;
+}
+.post-notice {
+    font-weight: 500;
+    color: #484848;
+    margin: 75px 0;
+}
+.post-button {
+    width: 222px;
+}
+.align-to-left-page {
+    margin: 100px;
+}
+.align-to-left-page .prop-heading {
+    margin-bottom: 30px;
+}
+.align-to-left-page h3 {
+    color: #fff;
+}
+.prop-card-cross-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.prop-cards-wrapper {
+    display: flex;
+}
+.wishlist-card {
+    margin: 0 30px;
+}
+.wishlist-card:first-child {
+    margin-left: 0;
 }
