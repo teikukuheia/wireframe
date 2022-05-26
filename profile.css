@@ -87,6 +87,7 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 .location-info-input {
+    line-height: 38px;
     border-radius: 8px;
     height: 46px;
     width: 780px;
@@ -96,6 +97,7 @@ header {
     resize: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 16px;
 }
 .location-info-input:focus {
     outline: none;

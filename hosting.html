@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website Wireframe Design</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="hosting.css">
 </head>
 <body>
     <header>
         <div class="header">
-        <div class="left-content pointer">
+        <div class="left-content">
             <a href="index.html">LOGO</a>
         </div>
         <div class="center-content">
@@ -29,52 +29,79 @@
                     <div class="line"></div>
                     <div class="header-menu-list">
                         <a href="messages.html">Messages</a>
-                        <a href="#">Notifications</a>
+                        <a href="messages.html">Notifications</a>
                         <a href="reservations.html">Reservations</a>
-                        <a href="reservations.html">Reservations</a>
-                        <a href="#">Transaction History</a>
+                        <a href="messages.html">Wishlists</a>
                         <div class="header-list-hr-line"></div>
                         <a href="profile.html">Account</a>
-                        <a href="#">Help center</a>
-                        <a href="#">Logout</a>
+                        <a href="messages.html">Help center</a>
+                        <a href="messages.html">Logout</a>
                     </div>
                 </div>
-            <div class="user-icon pointer" id="profile"><img src="icons/Vector.svg" alt=""></div>
+            <div class="user-icon pointer"><img src="icons/Vector.svg" id="profile" alt=""></div>
             </div>
         </div>
         
     </div>
+    <div class="bottom-content">
+        <div class="center-content">
+            <div class="hosting-with-us">
+                <h1 class="host-heading">Try Hosting With Us</h1>
+                <p class="host-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+                <a class="button longbtn" href="#getStarted">Lets Get Started</a>
+            </div>
+        </div>
+    </div>
     </header>
-    <div class="center-content">
-        <div class="info-frame">
-            <div class="left-info-profile-content">
-                <div class="profile-picture-frame">
-                    <img class="pointer" src="icons/profile_photo.svg" alt="">
-                    <h2 class="pointer">Upload a Photo</h2>
-                </div>
-                <h1 class="verify">Identity Verification</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <h1 class="name">John Doe</h1>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Email Confirmed</p>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Mobile Confirmed</p>
-            </div>
-            <div class="right-info-profile-content">
-                <h1 class="greet">Hello, John Doe</h1>
-                <p class="joined">Joined in 2022</p>
-                <div class="form">
-                    <p class="title-to">About</p>
-                    <textarea class="about-input" placeholder=" "> </textarea>
-                    <p class="title-to">Location</p>
-                    <textarea class="location-info-input" placeholder=" "> </textarea>
-                    <p class="title-to">Work</p>
-                    <textarea class="location-info-input" placeholder=" "> </textarea>
-                </div>
-                <div class="save-field">
-                    <p class="notice">All the required user information can be added here...</p>
-                    <div id="profile2" class="cancel pointer"><img src="icons/cross-2.svg" class="cross" alt="">Cancel</div>
-                    <div class="button save-button pointer" id="profile3">Save</div>
+        <div class="center-content" id="getStarted">
+            <div class="flex-hosting">
+                <div class="left-flex-hosting-card"></div>
+                <div class="right-flex-hosting-content">
+                    <h1 class="hosting-title">Some Title Here</h1>
+                    <div class="info-content">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="main-content">
+            <h1 class="heading-align-to-left">Hosting Tips & Guides</h1>
+            <div class="featured tips">
+                <div class="cards">
+                    <div class="outer-card">
+                        <div class="card"></div>
+                        <div class="desc tips">
+                            <h4>Choose the right property!</h4>
+                            <p>Economy</p>
+                        </div>
+                    </div>
+                    <div class="outer-card">
+                        <div class="card"></div>
+                        <div class="desc tips">
+                            <h4>Best environment for rental</h4>
+                            <p>Lifestyle</p>
+                        </div>
+                    </div>
+                    <div class="outer-card">
+                        <div class="card"></div>
+                        <div class="desc tips">
+                            <h4>Boys Hostel Apartment</h4>
+                            <p>Property</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="mail-us">
+        <div class="flex-mail-row">
+            <div class="mail-column">
+                <h4>NEWSLETTER</h4>
+                <p>Stay Upto Date</p>
+            </div>
+            <div class="mail-bar"><input type="text" class="mail-us-input" placeholder="Your Email..."></div>
+            <div class="submit-mail-button"><img src="icons/ph_paper-plane.svg"></div>
         </div>
     </div>
     <footer>
@@ -119,21 +146,18 @@
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
     <script>
         const userPage = document.getElementById("profile");
-        const userPage2 = document.getElementById("profile2");
-        const userPage3 = document.getElementById("profile3");
 
         userPage.addEventListener("click", goToUserPage);
-        userPage2.addEventListener("click", goToUserPage2);
-        userPage3.addEventListener("click", goToUserPage3);
 
         function goToUserPage() {
             location.href = "profile.html";
         }
-        function goToUserPage2() {
-            location.href = "profile.html";
-        }
-        function goToUserPage3() {
-            location.href = "profile.html";
+        const reservation = document.getElementById("reservation");
+
+        reservation.addEventListener("click", goToReservation);
+
+        function goToReservation() {
+            location.href = "reservation.html";
         }
     </script>
 </body>

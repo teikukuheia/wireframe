@@ -1,0 +1,55 @@
+* {
+    scroll-behavior: smooth;
+}
+.longbtn {
+    width: 220px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+    font-size: 15px;
+    text-decoration: none;
+}
+.host-heading {
+    font-weight: 700;
+    font-size: 46px;
+    color: #484848;
+}
+.host-desc {
+    width: 691px;
+    color: #9A9A9A;
+    line-height: 26px;
+}
+.hosting-with-us {
+    margin-right: auto;
+    margin-left: 80px;
+}
+.flex-hosting {
+    margin: 105px 80px;
+    display: flex;
+}
+.left-flex-hosting-card {
+    border-radius: 12px;
+    height: 450px;
+    width: 574px;
+    background: #e0e2e6;
+    margin-right: 44px;
+}
+.hosting-title {
+    color: #484848;
+    font-size: 46px;
+}
+.info-content p {
+    color: #9a9a9a;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.right-flex-hosting-content {
+    width: 600px;
+}
+.heading-align-to-left {
+    color: #484848;
+    font-size: 46px;
+}

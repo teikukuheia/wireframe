@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website Wireframe Design</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="prop.css">
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
                         <a href="messages.html">Messages</a>
                         <a href="#">Notifications</a>
                         <a href="reservations.html">Reservations</a>
-                        <a href="reservations.html">Reservations</a>
+                        <a href="#">Properties</a>
                         <a href="#">Transaction History</a>
                         <div class="header-list-hr-line"></div>
                         <a href="profile.html">Account</a>
@@ -45,36 +45,15 @@
         
     </div>
     </header>
-    <div class="center-content">
-        <div class="info-frame">
-            <div class="left-info-profile-content">
-                <div class="profile-picture-frame">
-                    <img class="pointer" src="icons/profile_photo.svg" alt="">
-                    <h2 class="pointer">Upload a Photo</h2>
-                </div>
-                <h1 class="verify">Identity Verification</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <h1 class="name">John Doe</h1>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Email Confirmed</p>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Mobile Confirmed</p>
-            </div>
-            <div class="right-info-profile-content">
-                <h1 class="greet">Hello, John Doe</h1>
-                <p class="joined">Joined in 2022</p>
-                <div class="form">
-                    <p class="title-to">About</p>
-                    <textarea class="about-input" placeholder=" "> </textarea>
-                    <p class="title-to">Location</p>
-                    <textarea class="location-info-input" placeholder=" "> </textarea>
-                    <p class="title-to">Work</p>
-                    <textarea class="location-info-input" placeholder=" "> </textarea>
-                </div>
-                <div class="save-field">
-                    <p class="notice">All the required user information can be added here...</p>
-                    <div id="profile2" class="cancel pointer"><img src="icons/cross-2.svg" class="cross" alt="">Cancel</div>
-                    <div class="button save-button pointer" id="profile3">Save</div>
-                </div>
-            </div>
+    <div class="center-content align-to-left">
+        <h1 class="prop-heading">Listed Properties</h1>
+        <div class="prop-card">
+            <h3>Family Apartment</h3>
+            <p>100 Smart Street, LA, USA</p>
+        </div>
+        <div class="buttons">
+            <div class="button modify">Modify</div>
+            <div class="button remove">Remove</div>
         </div>
     </div>
     <footer>
@@ -117,24 +96,5 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
-    <script>
-        const userPage = document.getElementById("profile");
-        const userPage2 = document.getElementById("profile2");
-        const userPage3 = document.getElementById("profile3");
-
-        userPage.addEventListener("click", goToUserPage);
-        userPage2.addEventListener("click", goToUserPage2);
-        userPage3.addEventListener("click", goToUserPage3);
-
-        function goToUserPage() {
-            location.href = "profile.html";
-        }
-        function goToUserPage2() {
-            location.href = "profile.html";
-        }
-        function goToUserPage3() {
-            location.href = "profile.html";
-        }
-    </script>
 </body>
 </html>
