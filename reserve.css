@@ -56,6 +56,9 @@ a:hover {
     color: #484848;
     margin: 0;
 }
+.header .header-menu-list a:hover {
+    text-decoration: none;
+}
 .thinner {
     height: 1px;
     margin-top: 7px;
