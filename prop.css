@@ -18,9 +18,12 @@ body {
     align-items: flex-start;
 }
 .center-content {
-    margin: 77px 78px;
+    margin: 90px auto;
     flex-direction: column;
     align-items: flex-start;
+}
+.margin-auto {
+    margin: 77px auto;
 }
 .prop-card {
     border-radius: 8px;
@@ -152,7 +155,6 @@ body {
     height: 38px;
     display: flex;
     align-items: center;
-    margin-left: 20px;
 }
 .sec-act-btn {
     border-radius: 20px;
@@ -164,4 +166,56 @@ body {
     background: #E8EAEC;
     color: #484848;
     font-weight: 600;
+}
+.reservation-buttons {
+    display: flex;
+    margin-left: auto;
+}
+.stories-add-button {
+    border-radius: 50%;
+    background: #9a9a9a;
+    width: 80px;
+    height: 80px;
+    padding: 25px;
+}
+.stories-content {
+    display: flex;
+}
+.stories-element {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.stories-inner-content {
+    margin-left: 25px;
+}
+.stories-element h2 {
+    font-size: 18px;
+    margin: 0;
+}
+.stories-inner-content p {
+    margin: 0;
+    margin-top: 2px;
+    color: #9a9a9a;
+    font-weight: 500;
+    font-size: 14px;
+}
+.stories-heading {
+    margin-top: 70px;
+}
+.stories-image {
+    height: 70px;
+    width: 70px;
+    background: #9a9a9a;
+    border-radius: 50%;
+}
+.var2 {
+    background: #c2c6cc;
+}
+.right-stories-content {
+    width: 774px;
+    height: 574px;
+    margin-left: 50px;
+    background: #e8eaec;
+    border-radius: 12px;
 }

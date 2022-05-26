@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel Website Wireframe Design</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="prop.css">
 </head>
 <body>
     <header>
@@ -31,8 +32,7 @@
                         <a href="#">Messages</a>
                         <a href="notifications.html">Notifications</a>
                         <a href="reservations.html">Reservations</a>
-                        <a href="properties.html">Properties</a>
-                        <a href="transaction.html">Transaction History</a>
+                        <a href="#">Wishlists</a>
                         <div class="header-list-hr-line"></div>
                         <a href="profile.html">Account</a>
                         <a href="#">Help center</a>
@@ -42,31 +42,34 @@
             <div class="user-icon pointer" id="profile"><img src="icons/Vector.svg" alt=""></div>
             </div>
         </div>
-        
     </div>
     </header>
-    <div class="center-content">
-        <div class="info-frame">
-            <div class="left-info-profile-content">
-                <div class="profile-picture-frame">
-                    <img class="pointer" src="icons/profile_photo.svg" alt="">
-                    <h2 class="pointer">Upload a Photo</h2>
+            <div class="center-content margin-auto">
+                <h1 class="prop-heading nomarginnohost link_to_host">Transaction History</h1>
+                <div class="activity-chose">
+                    <div class="option pointer active">Completed</div>
+                    <div class="option pointer">Upcoming</div>
+                    <div class="option pointer">Gross Earning</div>
+                    <div class="last-in-list option pointer"><img src="icons/eos-icons_csv-file.svg" alt="">Download</div>
                 </div>
-                <h1 class="verify">Identity Verification</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                <h1 class="name">John Doe</h1>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Email Confirmed</p>
-                <p class="crosses"><img class="cross" src="icons/cross.svg" alt="">Mobile Confirmed</p>
+                <div class="hr-line thinner sticktotop"></div>
+                <div class="reservations-list">
+                    <div class="transaction-frame">
+                        <div class="left-content-transaction">
+                            <h2>Transaction Title</h2>
+                            <p>12 Jul 2022 at 2:00 PM</p>
+                        </div>
+                        <div class="right-content-transaction">$ 1000 USD</div>
+                    </div>
+                    <div class="transaction-frame">
+                        <div class="left-content-transaction">
+                            <h2>Transaction Title</h2>
+                            <p>12 Jul 2022 at 2:00 PM</p>
+                        </div>
+                        <div class="right-content-transaction">$ 1000 USD</div>
+                    </div>
+                </div>
             </div>
-            <div class="right-info-profile-content">
-                <h1 class="greet">Hello, John Doe</h1>
-                <p class="joined">Joined in 2022</p>
-                <div class="outer-edit-button pointer" id="editProfile">Edit Profile</div>
-                <div class="reviews"><img src="icons/star.svg" class="review-star" alt=""><p>0 Reviews</p></div>
-                <div class="drawline-profile"></div>
-                <a href="reviewed.html" class="reviewed pointer">Reviewed By You</a>
-            </div>
-        </div>
     </div>
     <footer>
         <div class="left-footer-content">
@@ -109,12 +112,12 @@
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
     <script>
-        const edit = document.getElementById("editProfile");
+        const userPage = document.getElementById("profile");
 
-        edit.addEventListener("click", goToEdit);
+        userPage.addEventListener("click", goToUserPage);
 
-        function goToEdit() {
-            location.href = "edit.html";
+        function goToUserPage() {
+            location.href = "profile.html";
         }
     </script>
     <script src="script.js"></script>

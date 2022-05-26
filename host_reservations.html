@@ -16,7 +16,7 @@
         </div>
         <div class="center-content">
             <div class="list-element">Find a Property</div>
-            <div class="list-element">Share Stories</div>
+            <div class="list-element" id="stories">Share Stories</div>
             <div class="list-element">Rental Guides</div>
             <div class="list-element">Download Mobile App</div>
             <div class="button">Become A Host</div>
@@ -28,11 +28,11 @@
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="header-menu-list">
-                        <a href="messages.html">Messages</a>
-                        <a href="#">Notifications</a>
+                        <a href="#">Messages</a>
+                        <a href="notifications.html">Notifications</a>
                         <a href="reservations.html">Reservations</a>
                         <a href="#">Properties</a>
-                        <a href="#">Transaction History</a>
+                        <a href="transaction.html">Transaction History</a>
                         <div class="header-list-hr-line"></div>
                         <a href="profile.html">Account</a>
                         <a href="#">Help center</a>
@@ -45,8 +45,8 @@
         
     </div>
     </header>
-    <div class="center-content">
-        <h1 class="prop-heading">Reservations</h1>
+    <div class="center-content margin-auto">
+        <h1 class="prop-heading">My Reservations</h1>
         <div class="activity-chose">
             <div class="option pointer active">Upcoming</div>
             <div class="option pointer">Past</div>
@@ -64,8 +64,8 @@
                         <p class="reservation-option">Check in: <span class="reservation-answer">12 Jul 2022</span></p>
                         <p class="reservation-option">Duration: <span class="reservation-answer">Long ( 2 - 5 Years )</span></p>
                         <div class="reservation-option">Guests: <span class="reservation-answer">4 Adults</span></div>
-                        <div class="button reservation-button approve">Approve</div>
-                        <div class="button reservation-button sec-act-btn">Reject</div>
+                        <div class="reservation-buttons"><div class="button reservation-button approve">Approve</div>
+                        <div class="button reservation-button sec-act-btn">Reject</div></div>
                     </div>
                     <h2 class="pricing">By: John Doe</h2>
                 </div>
@@ -128,5 +128,6 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
+    <script src="script.js"></script>
 </body>
 </html>

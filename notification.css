@@ -1,0 +1,53 @@
+.nofitifactions-frame {
+    width: 1000px;
+    height: 511px;
+    margin: 72px;
+}
+.nofitications-heading {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background: #e8eaec;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #484848;
+}
+.nofitication-text h2 {
+    font-size: 16px;
+    margin: 0;
+}
+.nofitication-text {
+    display: flex;
+    flex-direction: column;
+}
+.nofitication-text p {
+    font-weight: 500;
+    color: #9a9a9a;
+    margin: 0;
+    margin-top: 2px;
+    font-size: 12px;
+}
+header {
+    height: 104px;
+    justify-content: center;
+}
+.notification-item {
+    display: flex;
+    padding: 30px;
+}
+.cross-notifiactions {
+    margin-left: auto;
+}
+.thinner {
+    width: 940px;
+    display: flex;
+    margin: 0 auto;
+    background: #E8EAEC;
+    height: 1px;
+}
+.notifications-inner-content {
+    border: 1px solid #E8EAEC;
+    border-bottom-left-radius : 12px;
+    border-bottom-right-radius : 12px;
+}
