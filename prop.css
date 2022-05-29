@@ -300,7 +300,14 @@ body {
     border-radius: 50%;
     margin: 0 20px;
 }
-.radial-number {
+.radial-icon, .long-option, .rent-option {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+.radial-number, .radial-number2, .radial-number3 {
     font-weight: 800;
     font-size: 22px;
 }
@@ -344,4 +351,8 @@ body {
 }
 .wishlist-card:first-child {
     margin-left: 0;
+}
+.chosen-quiz-item {
+    border: 2px solid #484848;
+    height: 104px;
 }

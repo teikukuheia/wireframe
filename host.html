@@ -94,15 +94,52 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
-    <script src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="script.js"></script> -->
     <script>
+        const stories = document.getElementById("stories");
+
+        stories.addEventListener("click", goToStories);
+
+        function goToStories(){
+            location.href = "stories.html";
+        }
+
+        const becomeHost = document.getElementById("become-a-host");
+
+        becomeHost.addEventListener("click", becomeAnHost);
+
+        function becomeAnHost(){
+            location.href = "host.html";
+        }
+
+        const lineButton = document.querySelectorAll("#profile");
+        lineButton.forEach(lineButton => {
+            lineButton.addEventListener("click", function(e){
+                location.href = "profile.html";
+            });
+        });
+
         const nextStep = document.getElementById("step_2");
 
         nextStep.addEventListener("click", nextQuizStep);
 
         function nextQuizStep(){
-            location.href = "quiz_step_2.html";
+            if (length != 0) { location.href = "quiz_step_2.html" } else alert ("chose at least one option.");
         }
+        const quizSmallOption = document.querySelectorAll(".rent-option");
+        var length = 0;
+        quizSmallOption.forEach(quizSmallOption => {
+            quizSmallOption.addEventListener("click", function(e){
+                if (this.classList.contains("chosen-quiz-item") ){
+                    this.classList.remove("chosen-quiz-item");
+                    length--;
+                } else if (length < 1) {
+                    this.classList.add("chosen-quiz-item");
+                    length++;
+                }
+            });
+        });
     </script>
 </body>
 </html>
