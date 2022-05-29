@@ -123,3 +123,23 @@ divideButton3.forEach(divideButton3 => {
         }
     });
 });
+// $(".header-menu-list").toggle();
+
+$(document).ready(function(){
+    $(".collapse").hover(function(){ 
+        // $(".header-menu-list").toggle(); 
+        $(".header-menu-list").css("opacity", "1"); }, function(){
+        setTimeout(function(){
+            $(".header-menu-list").css("opacity", "0");
+        }, 2000);
+        // $(".header-menu-list").toggle();
+    });
+});
+
+const crossIconCard = document.querySelectorAll(".prop-card-cross-icon");
+
+crossIconCard.forEach(crossIconCard => {
+    crossIconCard.addEventListener("click", function(e){
+        this.parentNode.remove();
+    });
+})

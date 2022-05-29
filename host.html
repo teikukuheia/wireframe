@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="prop.css">
 </head>
 <body>
+    <div class="cover">
+        <p>Select an option to proceed</p>
+        <div class="button cover-button">Got it</div>
+    </div>
     <header>
         <div class="header">
         <div class="left-content pointer">
@@ -97,6 +101,9 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <!-- <script src="script.js"></script> -->
     <script>
+        setTimeout(function(){
+            $(".cover").css("opacity", "1");
+        }, 500);
         const stories = document.getElementById("stories");
 
         stories.addEventListener("click", goToStories);
@@ -123,9 +130,14 @@
         const nextStep = document.getElementById("step_2");
 
         nextStep.addEventListener("click", nextQuizStep);
-
+        $(".cover").toggle();
         function nextQuizStep(){
-            if (length != 0) { location.href = "quiz_step_2.html" } else alert ("chose at least one option.");
+            if (length != 0) { location.href = "quiz_step_2.html" } 
+            else { 
+                $("body").css("overflow", "hidden"); 
+                $(".cover").toggle();
+                window.scrollTo(0,0);
+            }
         }
         const quizSmallOption = document.querySelectorAll(".rent-option");
         var length = 0;
@@ -139,6 +151,11 @@
                     length++;
                 }
             });
+        });
+        const proceedButton = document.querySelector(".cover-button");
+        proceedButton.addEventListener("click", function(){
+            $(".cover").toggle();
+            $("body").css("overflow", "visible");
         });
     </script>
 </body>

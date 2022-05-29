@@ -34,7 +34,7 @@ header {
     cursor: pointer;
 }
 .collapse:hover .header-menu-list {
-    opacity: 1;
+    /*opacity: 1;*/
 }
 .header {
     display: flex;
@@ -534,4 +534,23 @@ footer {
     border-top: 1px solid #E0E2E6;
     margin: 15px 0;
     width: 150px;
+}
+.cover {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 9999;
+    color: white;
+    font-weight: 500;
+    flex-direction: column;
+}
+.cover-button {
+    color: white;
+    background: #484848;
 }
