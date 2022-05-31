@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="prop.css">
 </head>
 <body>
+    <div class="add-button-banner">
+        <div class="add-banner-content">
+            <h2 class="adding-heading">Add reservation</h2>
+            <div class="adding-line"><h2>Name: </h2><input type="text" class="name-input"></div>
+            <div class="adding-line"><h2>Check in: </h2><input type="text" class="date-input"></div>
+            <div class="adding-line"><h2>Duration: </h2><input type="text" class="duration-input"></div>
+            <div class="adding-line"><h2>Guests: </h2><input type="text" class="guests-input"></div>
+            <div class="button cover-button margin-left-right">Continue</div>
+        </div>
+    </div>
     <header>
         <div class="header">
         <div class="left-content pointer">
@@ -50,6 +60,7 @@
         <div class="activity-chose">
             <div class="option pointer active">Upcoming</div>
             <div class="option pointer">Past</div>
+            <div class="option custom pointer"><div class="option-button">+ Add</div></div>
         </div>
         <div class="hr-line thinner sticktotop"></div>
         <div class="reservations-list">
@@ -125,6 +136,59 @@
         </div>
     </footer>
     <div class="copyright"><p class="copyright-left">&#169; 2022 thecreation.design | All Rights Reserved</p><p class="float-to-the-right">Created with love by <b>thecreation.design</b></p></div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            setTimeout(function(){
+                $(".add-button-banner").css("opacity", "1");
+            }, 500);
+            $(".add-button-banner").toggle();
+        });
+
+        const addReservationButton = document.querySelector(".custom");
+        const addPropertyButton = document.querySelector(".margin-left-right");
+
+        const nameInput = document.querySelector(".name-input");
+        const dateInput = document.querySelector(".date-input");
+        const duration = document.querySelector(".duration-input");
+        const peopleCount = document.querySelector(".guests-input");
+
+        var nameInputBox = document.querySelector(".reservation-name");
+        var dateReservation = document.querySelector(".date-reservation");
+        var durationTime = document.querySelector(".duration-time");
+        var peopleCountHtml = document.querySelector(".people-count-answer");
+
+        addReservationButton.addEventListener("click", function(){
+            $(".add-button-banner").toggle();
+            $("body").css("overflow", "hidden");
+        });
+
+        addPropertyButton.addEventListener("click", function(){
+                $(".add-button-banner").toggle();
+                $("body").css("overflow", "visible");
+                
+        //         if (nameInput.value != ""){
+        //             nameInputBox.innerHTML = nameInput.value;
+        //         }
+        //         if (dateInput.value != ""){
+        //             dateReservation.innerHTML = `Check in: <span class="reservation-answer">` + dateInput.value + `</span>`;
+        //         }
+        //         if (duration.value != ""){
+        //             console.log(duration.value);
+        //             durationTime.innerHTML = `Duration: <span class="reservation-answer">` + duration.value + `</span>`
+        //         }
+        //         if (peopleCount.value != ""){
+        //             console.log(duration.value);
+        //             peopleCountHtml.innerHTML = `Guests: <span class="reservation-answer">` + peopleCount.value + ` Adults</span>`
+        //         }
+        });
+        fetch("reservations.json")
+        .then(response => response.json())
+        .then(data => {
+            nameInputBox.innerHTML = data.Data.Name;
+        });
+        
+    </script>
 </body>
 </html>

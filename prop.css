@@ -356,3 +356,85 @@ body {
     border: 2px solid #484848;
     height: 104px;
 }
+.add-button-banner {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 9999;
+    color: white;
+    font-weight: 500;
+    flex-direction: column;
+}
+.add-button-banner-accept {
+    top: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    opacity: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 9999;
+    color: white;
+    font-weight: 500;
+    flex-direction: column;
+}
+.center-banner-content {
+    align-items: center !important;
+}
+.buttons-flex {
+    display: flex;
+}
+.no-button, .yes-button {
+    margin: 0 10px;
+}
+.yes-button {
+    background: rgb(213,36,36);
+}
+.no-button {
+    color: #484848;
+    background: #e8eaec;
+}
+.add-banner-content {
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 80px;
+    border-radius: 8px;
+}
+.adding-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adding-line input {
+    height: 25px;
+    margin-left: 25px;
+    border: none;
+    border-bottom: 1px solid #484848;
+}
+.adding-line input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #484848;
+}
+.name-input {
+    margin-left: 60px !important;
+}
+.guests-input {
+    margin-left: 50px !important;
+}
+.margin-left-right {
+    margin: 0 auto;
+}

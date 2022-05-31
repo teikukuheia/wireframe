@@ -1,3 +1,7 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+
 const stories = document.getElementById("stories");
 
 stories.addEventListener("click", goToStories);
@@ -65,9 +69,9 @@ addButton.forEach(addButton => {
 divideButton.forEach(divideButton => {
     divideButton.addEventListener("click", function(e){
         if(counterNumber >= 1){
-        counterNumber = isNaN(counterNumber) ? 0 : counterNumber;
-        counterNumber--;
-        item.innerHTML = counterNumber;
+            counterNumber = isNaN(counterNumber) ? 0 : counterNumber;
+            counterNumber--;
+            item.innerHTML = counterNumber;
         }
     });
 });
@@ -123,18 +127,6 @@ divideButton3.forEach(divideButton3 => {
         }
     });
 });
-// $(".header-menu-list").toggle();
-
-$(document).ready(function(){
-    $(".collapse").hover(function(){ 
-        // $(".header-menu-list").toggle(); 
-        $(".header-menu-list").css("opacity", "1"); }, function(){
-        setTimeout(function(){
-            $(".header-menu-list").css("opacity", "0");
-        }, 2000);
-        // $(".header-menu-list").toggle();
-    });
-});
 
 const crossIconCard = document.querySelectorAll(".prop-card-cross-icon");
 
@@ -143,3 +135,21 @@ crossIconCard.forEach(crossIconCard => {
         this.parentNode.remove();
     });
 })
+
+const reservationButton = document.querySelectorAll(".reservation-button");
+
+reservationButton.forEach(reservationButton => {
+    reservationButton.addEventListener("click", function(e){
+        $(".add-button-banner-accept").toggle();
+            this.closest(".reservation").remove();
+        if ($('.reservation').length == 0) { document.querySelector(".reservations-list").innerHTML = "<h2 class='no-items'>No upcoming reservations.</h2>"; console.log("test"); }
+    });
+});
+
+const removeButtonClick = document.querySelectorAll(".remove");
+
+removeButtonClick.forEach(removeButtonClick => {
+    removeButtonClick.addEventListener("click", function(e){
+        this.closest(".properties-whole-card").remove();
+    });
+});

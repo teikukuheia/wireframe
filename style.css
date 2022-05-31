@@ -34,7 +34,10 @@ header {
     cursor: pointer;
 }
 .collapse:hover .header-menu-list {
-    /*opacity: 1;*/
+    opacity: 1;
+}
+.no-items {
+    margin: 40px auto;
 }
 .header {
     display: flex;
@@ -553,4 +556,17 @@ footer {
 .cover-button {
     color: white;
     background: #484848;
+}
+.option-button {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-chose {
+    align-items: baseline;
+}
+.custom {
+    padding: 0 !important;
 }
