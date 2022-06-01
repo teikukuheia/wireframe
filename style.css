@@ -186,7 +186,7 @@ input {
     display: flex;
     flex-direction: row;
     margin: 64px 0;
-
+    width: 1300px;
 }
 .fav-line {
     display: flex;
